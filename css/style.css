@@ -1,0 +1,24 @@
+:root {
+  --color-bg: #f7f3ee;
+  --color-text: #2f2f2f;
+  --color-green: #5d6b57;
+  --color-accent: #b87b5e;
+  --color-light: #ffffff;
+}
+
+/* RESET */
+/* TYPOGRAPHY */
+/* LAYOUT */
+/* NAVIGATION */
+/* HERO */
+/* CARDS */
+/* BUTTONS */
+/* FOOTER */
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+  /* Styles for tablets and up */
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktops and up */
+}
