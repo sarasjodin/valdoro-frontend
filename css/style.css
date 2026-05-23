@@ -69,6 +69,18 @@ body {
   top: 1rem;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
 /* TYPOGRAPHY */
 
 body {
@@ -678,10 +690,6 @@ footer .footer-icon {
   line-height: 1.3;
 }
 
-.footer-combined {
-  display: none;
-}
-
 .footer-contact {
   width: fit-content;
   margin-inline: auto;
@@ -750,6 +758,16 @@ footer .footer-icon {
   margin-right: 0.75rem;
 }
 
+.footer-info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-about p + p {
+  margin-top: 1rem;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
   .hero-image {
@@ -802,9 +820,9 @@ footer .footer-icon {
     width: auto;
   }
 
-  /* .footer-brand {
-    grid-column: 1 / -1;
-  } */
+  .footer-container {
+    display: grid;
+  }
 
   .footer-contact-list li a,
   .places-list li {
@@ -858,30 +876,36 @@ footer .footer-icon {
     grid-row: 1;
   }
 
-  .footer-about {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
   .footer-contact {
     grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-row: 1;
     width: 100%;
-  }
-
-  .footer-technology {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .footer-combined {
-    display: none;
   }
 
   .footer .places-list,
   .footer-contact-list {
     gap: 0.5rem;
     align-items: unset;
+  }
+
+  .footer-info-group {
+    grid-column: 1 / -1;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .footer-about,
+  .footer-technology {
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-section {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -950,23 +974,9 @@ footer .footer-icon {
     grid-row: 1;
   }
 
-  .footer-combined {
+  .footer-info-group {
     grid-column: 3;
     grid-row: 1;
-    display: block;
-  }
-
-  .footer-combined p + p {
-    padding: 1rem 0;
-  }
-
-  .footer-technology {
-    display: none;
-  }
-
-  .footer-about {
-    display: none;
-    gap: 0.5rem;
   }
 
   .back-to-top {
@@ -974,7 +984,7 @@ footer .footer-icon {
   }
 
   footer .places-list {
-    gap: 1rem;
+    gap: 0.5rem;
     margin: 0;
     list-style: none;
     padding: 0;
