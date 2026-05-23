@@ -82,7 +82,13 @@
           </h2>
           <article class="card contact-card">
             <h3 class="visually-hidden">Contact form</h3>
-            <form class="contact-form" action="#" method="post">
+            <form
+              name="booking-request"
+              class="contact-form"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="booking-request" />
               <div class="form-grid">
                 <div class="form-field">
                   <label for="name">Name</label>
