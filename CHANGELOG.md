@@ -12,6 +12,49 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.2.0] – 2025-06-23
+
+### Added
+
+- Dynamic cabin rendering from the WordPress REST API
+- Featured cabins filtering using ACF `featured` field
+- Separate rendering logic for featured cabins and all cabins
+- Dynamic rendering for `stay.html`
+- Reusable cabin rendering functions
+- Reusable cabin card templates
+- Dynamic featured image rendering using WordPress `_embedded` media data
+- Fallback image handling for missing featured images
+- Dynamic pricing, guest count and location information
+- Special layout styling for Baita Valdoro on larger screens
+- Improved cabin card layout with metadata section, visual separation and separate positioning of price
+
+### Changed
+
+- Replaced static featured cabin cards with dynamic WordPress content
+- Replaced static stay page cabin cards with dynamic WordPress content
+- Improved cabin card typography and information hierarchy
+- Reused existing frontend styling with dynamic WordPress data
+
+---
+
+## [1.1.1] – 2025-06-23
+
+### Added
+
+- Render cabins dynamically from WordPress API
+
+---
+
+## [1.1.0] – 2025-06-23
+
+### Added
+
+- First WordPress REST API integration
+- Added cabins API fetch module `fetchCabins();`
+- Connected frontend to headless WordPress backend
+
+---
+
 ## [0.0.5] – 2025-06-22
 
 ### Added

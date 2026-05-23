@@ -441,15 +441,22 @@ main > .contact-form-section {
 }
 
 .price {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-size: 0.95rem;
   color: var(--color-text-muted);
+  text-align: right;
 }
 
 .price span {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--color-heading);
+}
+
+.card-content hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: 1.25rem 0;
 }
 
 /* LÄNKAR */
@@ -819,7 +826,12 @@ footer .footer-icon {
   }
 
   .card-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card--large {
+    grid-column: span 2;
   }
 
   .card-featured {
@@ -891,7 +903,11 @@ footer .footer-icon {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card-featured {
+  /*   .card-featured {
+    grid-column: span 3;
+  }
+ */
+  .card--large {
     grid-column: span 3;
   }
 
@@ -919,6 +935,9 @@ footer .footer-icon {
   .featured-content .card-meta,
   .featured-content .price {
     margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
   }
 
   .footer-brand {
