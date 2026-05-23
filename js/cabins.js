@@ -8,10 +8,9 @@
 
 // fetchCabins();
 // Fetches cabin data from the WordPress REST API.
-
 const API_URL = 'https://wordpress.sarasjodin.se/wp-json/wp/v2/cabins?_embed';
 
-async function fetchCabins() {
+export async function fetchCabins() {
   const response = await fetch(API_URL);
 
   if (!response.ok) {
@@ -19,7 +18,46 @@ async function fetchCabins() {
   }
 
   const cabins = await response.json();
-  console.log(cabins);
+
+  renderCabins(cabins);
 }
 
-fetchCabins();
+// Renders cabin data into the frontend UI.
+function renderCabins(cabins) {
+  const container = document.querySelector('#cabins-container');
+
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = '';
+
+  cabins.forEach((cabin) => {
+    let image = '';
+
+    if (
+      cabin._embedded &&
+      cabin._embedded['wp:featuredmedia'] &&
+      cabin._embedded['wp:featuredmedia'][0]
+    ) {
+      image = cabin._embedded['wp:featuredmedia'][0].source_url;
+    }
+
+    const card = `
+      <article class="card">
+        <img
+          src="${image}"
+          alt="${cabin.title.rendered}"
+        />
+
+        <div class="card-content">
+          <h3>${cabin.title.rendered}</h3>
+
+          <p>${cabin.acf.short_description}</p>
+        </div>
+      </article>
+    `;
+
+    container.innerHTML += card;
+  });
+}
