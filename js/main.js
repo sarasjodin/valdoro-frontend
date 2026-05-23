@@ -10,6 +10,8 @@
 
 import { setCurrentYear } from './footer.js';
 import { initMenu } from './navigation.js';
+import { fetchCabins } from './cabins.js';
 
 setCurrentYear(); // Adds the current year to the copyright section footer
 initMenu(); // Initializes the navigation menu
+fetchCabins(); // Fetches cabin data from the WordPress REST API
