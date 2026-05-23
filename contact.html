@@ -75,7 +75,13 @@
       <section class="content-section contact-form-section">
         <div class="container">
           <article class="card contact-card">
-            <form class="contact-form" action="#" method="post">
+            <form
+              name="booking-request"
+              class="contact-form"
+              method="POST"
+              data-netlify="true"
+            >
+              <input type="hidden" name="form-name" value="booking-request" />
               <div class="form-grid">
                 <div class="form-field">
                   <label for="name">Name</label>
