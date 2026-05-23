@@ -12,6 +12,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.3.1] – 2026-05-23
+
+### Added
+
+- Added Netlify Forms support for booking requests
+- Enabled live contact form submissions
+
+---
+
 ## [1.3.0] – 2026-05-23
 
 ### Added
