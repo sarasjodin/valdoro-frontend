@@ -12,6 +12,15 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.3.0] – 2026-05-23
+
+### Added
+
+- Added Yoast SEO configuration
+- Added support for dynamic cabin pricing with ACF fields
+
+---
+
 ## [1.2.0] – 2025-06-23
 
 ### Added
