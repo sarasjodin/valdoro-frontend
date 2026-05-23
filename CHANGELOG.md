@@ -21,6 +21,20 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [1.2.1] – 2026-05-23
+
+### Changed
+
+- Validated html and css andcontinued with necessary changes:
+- Improved footer layout structure and responsive grid behavior
+- Removed duplicated footer content and heading IDs
+- Improved semantic HTML structure and accessibility
+- Added missing section headings for HTML validation
+- Improved cabin card spacing and content hierarchy
+- Refined full-width map page layout
+
+---
+
 ## [1.2.0] – 2025-06-23
 
 ### Added
