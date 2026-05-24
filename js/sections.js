@@ -245,11 +245,17 @@ function createCards(cardsJson) {
 
 // Creates a single card based on the card data from ACF
 function createCard(card) {
+  const image = card.image
+    ? `<img src="${card.image}" alt="${card.alt || ''}" class="card-image" />`
+    : '';
+
   const text = card.text ? `<p>${card.text}</p>` : '';
   const items = card.items ? createCardItems(card.items) : '';
 
   return `
     <article class="card">
+      ${image}
+
       <div class="card-content">
         <h3>${card.title}</h3>
         ${text}

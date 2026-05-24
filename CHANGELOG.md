@@ -12,6 +12,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.3] – 2026-05-24
+
+### Added
+
+- Team presentation on `About` page
+
+---
+
 ## [2.0.2] – 2026-05-24
 
 ### Changed
