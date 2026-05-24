@@ -12,6 +12,34 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.0] – 2026-05-24
+
+### Added
+
+- Added dynamic WordPress sections with ACF and REST API
+- Added reusable Hero, Intro, Image and Card sections
+- Added dynamic buttons, links, cards and lists from WordPress
+- Added support for dynamic section images and headings
+- Added improved booking form validation and accessibility
+- Added Netlify spam protection for booking forms
+- Added favicon support for browsers and mobile devices
+
+### Changed
+
+- Replaced static sections with WordPress-managed content
+- Simplified section rendering and frontend logic
+- Improved section structure, navigation and CTA behavior
+- Improved semantic HTML for dynamic content
+- Simplified JavaScript comments, naming and file structure
+- Improved consistency between static HTML and WordPress content
+
+### Removed
+
+- Removed old promo section system
+- Removed console logs
+
+---
+
 ## [1.3.1] – 2026-05-23
 
 ### Added

@@ -5,13 +5,8 @@
  * @author Sara Sjödin Scolari
  */
 
-// setCurrentYear(); Adds the current year to the copyright section footer
+// setCurrentYear();  Updates the footer year automatically
 
-/**
- * Creates a year variable that updates automatically for the footer copyright text.
- * @function
- * @returns {void}
- */
 export function setCurrentYear() {
   const yearSpan = document.getElementById('current-year');
   if (yearSpan) {
