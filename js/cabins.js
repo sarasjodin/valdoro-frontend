@@ -51,6 +51,7 @@ function renderAllCabins(cabins) {
 function renderCabinList(cabins, createCard, containerSelector) {
   const container = document.querySelector(containerSelector);
 
+  // Stops if the page has no cabin grid
   if (!container) {
     return;
   }
@@ -83,7 +84,7 @@ function createCabinCard(cabin) {
       <img src="${getCabinImage(cabin)}" alt="${cabin.title.rendered}" />
 
       <div class="card-content">
-        <h3>${cabin.title.rendered}</h3>
+        <h2>${cabin.title.rendered}</h2>
         <p>${cabin.acf.short_description}</p>
           <hr />
 
