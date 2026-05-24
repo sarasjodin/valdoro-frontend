@@ -12,6 +12,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.2] – 2026-05-24
+
+### Changed
+
+- Improved skip link accessibility and keyboard navigation by adding focus handling for the main content area, with tabindex="-1" on <main>
+
+---
+
 ## [2.0.1] – 2026-05-24
 
 ### Added
