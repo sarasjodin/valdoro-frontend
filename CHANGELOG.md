@@ -12,6 +12,16 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.1] – 2026-05-24
+
+### Added
+
+- Added maximum site width for large screens
+- Added improved desktop hero image positioning
+- Added updated technology stack description in the footer
+
+---
+
 ## [2.0.0] – 2026-05-24
 
 ### Added
