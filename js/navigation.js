@@ -5,16 +5,19 @@
  * @author Sara Sjödin Scolari
  */
 
-// initMenu(); Initializes the navigation menu on page load
-
 // Handles the mobile navigation menu
 
-export function initMenu() {
+export function initMenu(menuItems) {
+  // Initializes the navigation menu with the provided menu items
+  console.log(menuItems);
+
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-navigation');
 
   // Stops if the menu elements are missing
   if (!menuButton || !navigation) return;
+
+  renderMenu(menuItems, navigation); // Renders the menu items into the navigation element from the API
 
   function openMenu() {
     menuButton.setAttribute('aria-expanded', 'true');
@@ -57,4 +60,31 @@ export function initMenu() {
       closeMenu();
     }
   });
+}
+
+function renderMenu(menuItems, navigation) {
+  // Renders the menu items into the navigation element from the API
+  const currentPath = window.location.pathname; // Gets the current path to determine which menu item is active
+
+  navigation.innerHTML = `
+    <ul class="nav-list">
+      ${menuItems
+        .map((item) => {
+          const isCurrent = currentPath.includes(item.href.replace('./', '')); // Checks if the current path matches the menu item's href
+
+          return `
+            <li class="nav-item">
+              <a
+                href="${item.href}"
+                class="nav-link"
+                ${isCurrent ? 'aria-current="page"' : ''} // Adds aria-current attribute if it is the current page
+              >
+                ${item.label}
+              </a>
+            </li>
+          `;
+        })
+        .join('')}
+    </ul>
+  `;
 }

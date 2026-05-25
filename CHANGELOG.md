@@ -12,6 +12,30 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.4] – 2026-05-26
+
+### Added
+
+- Added dynamic navigation fetching using WPGraphQL
+- Added menu.js module for GraphQL menu requests
+- Added dynamic rendering of WordPress menu items
+- Added support for aria-current="page" in navigation
+- Added new our-guests.png image asset
+
+### Changed
+
+- Updated navigation.js to render navigation dynamically from WordPress data
+- Updated main.js to initialize navigation asynchronously
+- Updated sections.js to use optimized WordPress image sizes instead of full-size media to improve image loading
+
+### Technical
+
+- Integrated WordPress GraphQL endpoint for menu handling
+- Replaced static navigation structure with CMS-driven menu rendering
+- Added path normalization for local HTML routing
+
+---
+
 ## [2.0.3] – 2026-05-24
 
 ### Added

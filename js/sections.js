@@ -283,7 +283,7 @@ function createImageFigure(image, className) {
   return `
     <figure class="${className}">
       <img
-        src="${image.source_url}"
+        src="${image.media_details.sizes.medium?.source_url || image.source_url}" // Use medium size else original image as fallback (image optimization)
         alt="${image.alt_text || ''}"
       />
     </figure>
