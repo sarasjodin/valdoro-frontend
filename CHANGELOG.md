@@ -12,6 +12,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.0.5] – 2026-05-26
+
+### Fixed
+
+- Improved active navigation state handling for the Home page by fixing aria-current="page" detection for root path navigation
+
+---
+
 ## [2.0.4] – 2026-05-26
 
 ### Added

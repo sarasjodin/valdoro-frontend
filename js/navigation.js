@@ -70,14 +70,18 @@ function renderMenu(menuItems, navigation) {
     <ul class="nav-list">
       ${menuItems
         .map((item) => {
-          const isCurrent = currentPath.includes(item.href.replace('./', '')); // Checks if the current path matches the menu item's href
+          const hrefPath = item.href.replace('./', ''); // Normalizes the href to compare with the current path
+          const isHome = item.href === './index.html'; // Checks if the menu item is the home page link
+          const isCurrent =
+            currentPath.includes(hrefPath) ||
+            (isHome && currentPath.endsWith('/')); // Determines if the menu item is the current page based on the path
 
           return `
             <li class="nav-item">
               <a
                 href="${item.href}"
                 class="nav-link"
-                ${isCurrent ? 'aria-current="page"' : ''} // Adds aria-current attribute if it is the current page
+                ${isCurrent ? 'aria-current="page"' : ''}
               >
                 ${item.label}
               </a>
