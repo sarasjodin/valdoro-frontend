@@ -9,8 +9,6 @@
 
 export function initMenu(menuItems) {
   // Initializes the navigation menu with the provided menu items
-  console.log(menuItems);
-
   const menuButton = document.querySelector('.menu-toggle');
   const navigation = document.querySelector('#main-navigation');
 
