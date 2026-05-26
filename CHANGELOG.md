@@ -12,6 +12,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.1.0] – 2026-05-26
+
+### Fixed
+
+- Förbättrat och vidareutvecklat navigation och menyhantering i menu.js och navigation.js.
+- Vidareutvecklat dynamisk rendering av sektioner via sections.js.
+- Uppdaterat styling och responsiv layout i style.css.
+- Skapat sitemap.xml och robots.txt för förbättrad SEO och enklare indexering av webbplatsens sidor.
+- Förbättrat struktur och förberedelser för dynamisk hantering av innehåll via REST API och WordPress CMS.
+
+---
+
 ## [2.0.5] – 2026-05-26
 
 ### Fixed

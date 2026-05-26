@@ -20,9 +20,7 @@ export async function fetchSections(page) {
 
   const sections = await response.json();
 
-  return sections
-    .filter((section) => section.acf.page_location === page)
-    .sort((a, b) => a.acf.sort_order - b.acf.sort_order);
+  return sections.filter((section) => section.acf.page_location === page); // Filters sections based on the ACF field: page_location
 }
 
 export async function renderSections(sections) {
